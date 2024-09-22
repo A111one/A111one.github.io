@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This page was created using a script in Termux.</p>
+    <h1>Make a Payment</h1>
+    <form action="https://faucetpay.io/merchant/webscr" method="post">
+        <input type="text" name="merchant_username" value="malik1e" readonly>
+        <br>
+        <input type="text" name="item_description" value="All Items" readonly>
+        <br>
+        <input type="text" name="amount1" value="100">
+        <br>
+        <input type="text" name="currency1" value="USD">
+        <br>
+        <input type="text" name="currency2" value="BTC">
+        <br>
+        <input type="text" name="custom" value="">
+        <br>
+        <input type="text" name="callback_url" value="">
+        <br>
+        <input type="text" name="success_url" value="">
+        <br>
+        <input type="text" name="cancel_url" value="">
+        <br>
+        <input type="submit" name="submit" value="Make Payment">
+    </form>
 </body>
 </html>
+
